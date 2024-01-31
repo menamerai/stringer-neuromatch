@@ -1,11 +1,6 @@
 import os, requests
 import numpy as np
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, mean_absolute_error
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix
-
 def retrieve_data_orientation() -> np.array:
     """
     Retrieve Stringer et al. (2019) orientation data from OSF repository.
